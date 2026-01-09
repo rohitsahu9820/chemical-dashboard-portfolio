@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chemical Analytics Dashboard Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>Chemical Industry Dashboard Solutions</h1>
+  <p>Production • Sales • Quality • Energy • Compliance</p>
+  <a href="#dashboards" class="btn">View Dashboards</a>
+</header>
+
+<section class="stats">
+  <div class="stat"><span class="counter" data-target="25">0</span><p>Plants Covered</p></div>
+  <div class="stat"><span class="counter" data-target="120">0</span><p>Dashboards Built</p></div>
+  <div class="stat"><span class="counter" data-target="99">0</span><p>% Client Satisfaction</p></div>
+</section>
+
+<section id="dashboards" class="gallery">
+  <h2>Dashboard Samples</h2>
+
+  <div class="grid">
+    <div class="card" onclick="openModal('dashboards/production.png')">
+      <img src="dashboards/production.png">
+      <h3>Production Analytics</h3>
+    </div>
+
+    <div class="card" onclick="openModal('dashboards/sales.png')">
+      <img src="dashboards/sales.png">
+      <h3>Sales Performance</h3>
+    </div>
+
+    <div class="card" onclick="openModal('dashboards/quality.png')">
+      <img src="dashboards/quality.png">
+      <h3>Quality Control</h3>
+    </div>
+
+    <div class="card" onclick="openModal('dashboards/energy.png')">
+      <img src="dashboards/energy.png">
+      <h3>Energy & Utility</h3>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Why Chemical Companies Choose Us</h2>
+  <ul>
+    <li>✔ Industry-specific KPIs (Yield, Batch, Rejection)</li>
+    <li>✔ Power BI & Advanced Analytics</li>
+    <li>✔ Real-time plant visibility</li>
+    <li>✔ Compliance-ready reporting</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 Chemical Analytics Portfolio | Powered by GitHub Pages</p>
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">×</span>
+  <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
